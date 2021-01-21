@@ -80,11 +80,11 @@ end
 
 % Position the panels in figure
 psize = [0.4, 0.3];             
-panel(1).Position = [0, psize(2)*3, psize(1), 0.1];
-panel(2).Position = [0, psize(2)*2, psize(1)/2, psize(2)];
-panel(3).Position = [psize(1)/2, psize(2)*2, psize(1)/2, psize(2)];
-panel(4).Position = [0, psize(2)*1, psize(1), psize(2)];
-panel(5).Position = [0, 0, psize(1), psize(2)];
+panel(1).Position = [0, 0, psize(1), 0.1];
+panel(2).Position = [0, psize(2)*2 + 0.1, psize(1)/2, psize(2)];
+panel(3).Position = [psize(1)/2, psize(2)*2 + 0.1, psize(1)/2, psize(2)];
+panel(4).Position = [0, psize(2)*1 + 0.1, psize(1), psize(2)];
+panel(5).Position = [0, 0.1, psize(1), psize(2)];
 panel(6).Position = [psize(1), 0.3, (1-psize(1)), 0.7];
 panel(7).Position = [psize(1), 0, (1-psize(1)), 0.3];
 

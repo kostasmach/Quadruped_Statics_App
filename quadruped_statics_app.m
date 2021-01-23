@@ -70,7 +70,7 @@ uicontrol(fig, 'Style', 'text', ...
     'Position', [0.375 0.4 0.25 0.2]);
 
 % Hit a key or Wait to continue
-pause(0.5);
+pause(0.2);
 
 % Create panels in figure
 for i = 1:7

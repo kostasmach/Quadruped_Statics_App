@@ -97,7 +97,7 @@ button(4).Callback = @decrease_ydesH;
 button(8).Callback = @increase_ydesH;
 
 % Define step (in mm) the toe moves in x and y after a button press
-toe_move_step = 0.05;
+toe_move_step = 0.01;
 
 % Create radio button group (Hind Knee Configuration)
 rb_group_1 = uibuttongroup(panel, 'Visible', 'on', ...

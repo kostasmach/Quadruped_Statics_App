@@ -19,35 +19,35 @@ global knee_mechanism number_of_legs
 % Add path
 addpath('./functions')
 
+% Initialize Geometry
+geometry.lb = 0.6;
+geometry.lF1 = 0.25;
+geometry.lF2 = 0.35;
+geometry.lH1 = 0.25;
+geometry.lH2 = 0.35;
+
 % Initialize mass of all bodies. Each member of the inertial struct 
 % contains the mass of a single body (i.e. a leg segment or the main body).
 inertial.mb = 40;
-inertial.mF1 = 1;
-inertial.mF2 = 1;
-inertial.mH1 = 1;
-inertial.mH2 = 1;
+inertial.mF1 = 0.35;
+inertial.mF2 = 0.8;
+inertial.mH1 = 0.35;
+inertial.mH2 = 0.8;
 
 % Initialize CoM positions
-inertial.db = 1;
-inertial.dF1 = 0.5;
-inertial.dF2 = 0.5;
-inertial.dH1 = 0.5;
-inertial.dH2 = 0.5;
+inertial.db = geometry.lb/2;
+inertial.dF1 = geometry.lF1/2;
+inertial.dF2 = geometry.lF2/2;
+inertial.dH1 = geometry.lH1/2;
+inertial.dH2 = geometry.lH2/2;
 
 % Initialize Posture
 posture.xdesF = 0;
-posture.ydesF = -1;
+posture.ydesF = -0.45;
 posture.kneeFWF = -1;
 posture.xdesH = 0;
-posture.ydesH = -1;
+posture.ydesH = -0.45;
 posture.kneeFWH = -1;
-
-% Initialize Geometry
-geometry.lb = 2;
-geometry.lF1 = 1;
-geometry.lF2 = 1;
-geometry.lH1 = 1;
-geometry.lH2 = 1;
 
 % Initialize configuration
 knee_mechanism = 0;
